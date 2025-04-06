@@ -1,3 +1,13 @@
+:root{
+    --background: #fafafa;
+    --white: #ffffff;
+    --blue:#3c96ed;
+    --grey: #8e8e8e;
+    --light-grey:#e6e6e6;
+    --black: #000000;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +16,11 @@
 
 a{
     text-decoration: none;
-    color: #3c96ed;
+    color: var(--blue);
 }
 
 body{
-    background-color: #fafafa;
+    background-color: var(--background);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,8 +59,8 @@ body{
 }
 
 .login-panel{
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
     text-align: center;
     padding: 20px 0;
 }
@@ -67,7 +77,7 @@ form{
 }
 
 input[type="password"], input[type="text"]{
-    background-color: #ffffff;
+    background-color: var(--white);
     border: 1px solid rgb(236, 234, 234);
     height: 40px;
     border-radius: 4px;
@@ -93,16 +103,16 @@ input[type="submit"]{
     margin-bottom: 10px;
     height: 30px;
     border: 0;
-    background-color: #3c96ed;
+    background-color: var(--blue);
     border-radius: 4px;
-    color: #ffffff;
+    color: var(--white);
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .infobox{
-    background-color: #ffffff;
+    background-color: var(--white);
     height: 60px;
     border: rgb(236, 234, 234);
     margin: 10px auto 0;
@@ -141,7 +151,7 @@ footer{
 }
 
 footer a{ 
-    color: #000;
+    color: var(--black);
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 8px;
@@ -151,7 +161,7 @@ footer a{
 .text-small{
     font-size: 12px;
     font-weight: bold;
-    color: grey;
+    color: var(--grey);
     text-transform: uppercase;
     padding-left: 20px;
     display: inline-block;
@@ -177,15 +187,15 @@ footer a{
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
-    color: #8e8e8e;
+    color: var(--grey);
 }
 
 .cta-button{
     width: 320px;
     margin: 10px 0;
     height: 35px;
-    background-color: #0095f6;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
     border: 0;
     border-radius: 4px;
     font-size: 15px;
@@ -202,12 +212,12 @@ footer a{
 
 .line{
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--light-grey);
     width: 35%;
 }
 
 .divisor-tag{
     font-weight: bold;
     margin: 0 2.5%;
-    color: #8e8e8e;
+    color: var(--grey);
 }
